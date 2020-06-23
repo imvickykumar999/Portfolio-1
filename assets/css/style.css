@@ -117,6 +117,17 @@ a:hover{
     margin-top: 3rem;
 }
 
+.form-to-contact{
+    background-color: darkslategray;
+    border:2px solid  darkslategray;
+    border-radius:6px;
+}
+
+.categories-area .form-to-contact{
+    animation:fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
+}
+
 #back-top{
     background: darkslategray;
     height:50px;

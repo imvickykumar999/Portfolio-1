@@ -41,17 +41,20 @@ a:hover{
     margin-top: 8rem;
 }
 
+.starting-content {
+    background-color: darkslategray;
+}
+
 .topInfo {
     animation:fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; 
 }
 
 .topInfo span{
-    color:darkslategray;
     font-weight: 800;
 }
 
-.topImg {
+.topImg img {
     border:2px solid darkslategray;
     border-radius: 6px;
     animation:fadeInDown; /* referring directly to the animation's @keyframe declaration */
@@ -59,8 +62,7 @@ a:hover{
 }
 
 .btn1 , .btn2{
-    background-color: darkslategray;
-    color: white;
+    color: darkslategray;
     border: none;
     margin-left: 1rem;
 }
@@ -142,6 +144,7 @@ a:hover{
     line-height:48px;
     border:2px solid transparent;
     box-shadow:0 0 10px 3px rgba(108,98,98,0.2);
+    z-index:2;
     }
 /* @media (max-width: 575px){#scrollUp,#back-top{right:16px}}#scrollUp a i,#back-top a i{display:block;line-height:50px}
 #scrollUp:hover{color:#fff}.sticky-bar{left:0;margin:auto;position:fixed;top:0;width:100%;-webkit-box-shadow:0 10px 15px rgba(25,25,25,0.1);box-shadow:0 10px 15px rgba(25,25,25,0.1);z-index:9999;
@@ -199,7 +202,6 @@ a:hover{
         color:white;
         font-weight:600;
     }
-
     .categories-area .single-cat:hover::before{
         height:100%
     }

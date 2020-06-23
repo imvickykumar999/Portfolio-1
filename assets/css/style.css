@@ -41,9 +41,13 @@ a:hover{
 }
 
 .topInfo {
-    margin: 0 0.5rem;
     animation:fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; 
+}
+
+.topInfo span{
+    color:darkslategray;
+    font-weight: 800;
 }
 
 .topImg {
@@ -56,17 +60,19 @@ a:hover{
 .btn1 , .btn2{
     background-color: darkslategray;
     color: white;
+    border: none;
+    margin-left: 1rem;
+}
+
+.categories-area{
+    animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
 }
 
 .single-cat{
     border:2px solid  darkslategray;
     border-radius:6px;
     padding:0.8rem 0.8rem;
-    -webkit-transition:all .4s ease-out 0s;
-    -moz-transition:all .4s ease-out 0s;
-    -ms-transition:all .4s ease-out 0s;
-    -o-transition:all .4s ease-out 0s;
-    transition:all .4s ease-out 0s;
     position:relative;
     z-index:1;
 }
@@ -96,30 +102,12 @@ a:hover{
     display:inline-block;
 }
 .categories-area .single-cat .cat-cap h5>a{
+    color:white;
     font-size:1.5rem;
     font-weight:700;
     margin-bottom:1.5rem;
-    display:block;
-    -webkit-transition:all .2s ease-out 0s;
-    -moz-transition:all .2s ease-out 0s;
-    -ms-transition:all .2s ease-out 0s;
-    -o-transition:all .2s ease-out 0s;
-    transition:all .2s ease-out 0s;
 }
 
-.categories-area .single-cat .cat-cap a{
-    color:white;
-    font-size:16px;
-    font-weight:600;
-    -webkit-transition:all .2s ease-out 0s;
-    -moz-transition:all .2s ease-out 0s;
-    -ms-transition:all .2s ease-out 0s;
-    -o-transition:all .2s ease-out 0s;
-    transition:all .2s ease-out 0s
-}
-.categories-area .single-cat:hover{
-    border:1px solid transparent
-}
 .categories-area .single-cat:hover::before{
     height:100%
 }
@@ -141,7 +129,7 @@ a:hover{
     border-radius:50%;
     line-height:48px;
     border:2px solid transparent;
-    box-shadow:0 0 10px 3px rgba(108,98,98,0.2)
+    box-shadow:0 0 10px 3px rgba(108,98,98,0.2);
     }
 /* @media (max-width: 575px){#scrollUp,#back-top{right:16px}}#scrollUp a i,#back-top a i{display:block;line-height:50px}
 #scrollUp:hover{color:#fff}.sticky-bar{left:0;margin:auto;position:fixed;top:0;width:100%;-webkit-box-shadow:0 10px 15px rgba(25,25,25,0.1);box-shadow:0 10px 15px rgba(25,25,25,0.1);z-index:9999;
@@ -155,39 +143,14 @@ a:hover{
     .categories-area .single-cat .cat-cap h5>a{
         font-size:1.3rem;
     }
-    .categories-area .single-cat .cat-cap p{
-        
-    }
+
     .categories-area .single-cat .cat-cap a{
         color:white;
-        font-size:16px;
         font-weight:600;
-        -webkit-transition:all .2s ease-out 0s;
-        -moz-transition:all .2s ease-out 0s;
-        -ms-transition:all .2s ease-out 0s;
-        -o-transition:all .2s ease-out 0s;
-        transition:all .2s ease-out 0s
     }
-    .categories-area .single-cat:hover{
-        border:1px solid transparent
-    }
+
     .categories-area .single-cat:hover::before{
         height:100%
-    }
-    .categories-area .single-cat:hover .cat-icon span{
-        background:#fff
-    }
-    .categories-area .single-cat:hover .cat-cap h5{
-        color:#fff
-    }
-    .categories-area .single-cat:hover .cat-cap p{
-        color:#fff
-    }
-    .categories-area .single-cat:hover .cat-cap a{
-        color:#fff
-    }
-    .footer-area{
-        background:#080827
     }
 }
 
@@ -204,25 +167,27 @@ a:hover{
         flex-direction: column;
     }
 
-    .topImg{
-        margin-top: 2rem;
+    .topInfo {
+        animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; 
     }
+    
+    .topImg {
+        margin-top: 2rem;
+        border:2px solid darkslategray;
+        border-radius: 6px;
+        animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; 
+    }
+
     .categories-area .single-cat .cat-cap h5>a{
-        font-size:21px
+        font-size:1.1rem;
     }
     .categories-area .single-cat .cat-cap a{
         color:white;
-        font-size:16px;
         font-weight:600;
-        -webkit-transition:all .2s ease-out 0s;
-        -moz-transition:all .2s ease-out 0s;
-        -ms-transition:all .2s ease-out 0s;
-        -o-transition:all .2s ease-out 0s;
-        transition:all .2s ease-out 0s
     }
-    .categories-area .single-cat:hover{
-        border:1px solid transparent
-    }
+
     .categories-area .single-cat:hover::before{
         height:100%
     }
@@ -241,25 +206,27 @@ a:hover{
             flex-direction: column;
         }
 
-        .topImg{
-            margin-top: 2rem;
+        .topInfo {
+            animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s; 
         }
+        
+        .topImg {
+            margin-top: 2rem;
+            border:2px solid darkslategray;
+            border-radius: 6px;
+            animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s; 
+        }
+
         .categories-area .single-cat .cat-cap h5>a{
-            font-size:21px
+            font-size:1rem;
         }
         .categories-area .single-cat .cat-cap a{
             color:white;
-            font-size:16px;
             font-weight:600;
-            -webkit-transition:all .2s ease-out 0s;
-            -moz-transition:all .2s ease-out 0s;
-            -ms-transition:all .2s ease-out 0s;
-            -o-transition:all .2s ease-out 0s;
-            transition:all .2s ease-out 0s
         }
-        .categories-area .single-cat:hover{
-            border:1px solid transparent
-        }
+
         .categories-area .single-cat:hover::before{
             height:100%
         }
@@ -270,7 +237,7 @@ a:hover{
     position:relative;
     border-style:solid;
     border-width:1px;
-    border-top-color:#ec5b53;
+    border-top-color:darkslategray;
     border-bottom-color:transparent;
     border-left-color:transparent;
     border-right-color:transparent;
@@ -285,7 +252,7 @@ a:hover{
 }
 
 .preloader .preloader-circle2{
-    border-top-color:#0078ff
+    border-top-color:darkslategray;
 }
 
 .preloader .preloader-img{
@@ -311,24 +278,25 @@ a:hover{
 
 .preloader .pere-text strong{
     font-weight:800;
-    color:#dca73a;
+    color:darkslategray;
     text-transform:uppercase
 }
 
-@-webkit-keyframes zoom{0%{
+@-webkit-keyframes zoom{
+    0%{
     -webkit-transform:rotate(0deg);
     transform:rotate(0deg);
     -webkit-transition:.6s;
     -o-transition:.6s;transition:.6s
 }
 
-100%{
-    -webkit-transform:rotate(360deg);
-    transform:rotate(360deg);
-    -webkit-transition:.6s;
-    -o-transition:.6s;
-    transition:.6s
-}
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+        -webkit-transition:.6s;
+        -o-transition:.6s;
+        transition:.6s
+    }
 }
 
 @keyframes zoom{
@@ -344,5 +312,6 @@ a:hover{
         -webkit-transform:rotate(360deg);
         transform:rotate(360deg);
         -webkit-transition:.6s;
-        -o-transition:.6s;transition:.6s}
-    } */
+        -o-transition:.6s;transition:.6s
+    }
+} */

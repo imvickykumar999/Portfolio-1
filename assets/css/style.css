@@ -37,12 +37,16 @@ a:hover{
     color:white;
 }
 
-.container{
+.top-container{
     margin-top: 8rem;
 }
 
 .starting-content {
     background-color: darkslategray;
+}
+
+.togivespacing{
+    margin-top:3.5rem;
 }
 
 .topInfo {
@@ -135,6 +139,10 @@ a:hover{
     margin-top: 3rem;
 }
 
+.section-title{
+    margin-bottom: 1.5rem;
+}
+
 .form-to-contact{
     background-color: darkslategray;
     border:2px solid  darkslategray;
@@ -165,7 +173,30 @@ a:hover{
 
 @media only screen and (min-width: 767.98px) and (max-wdith:992px) 
 { 
-   
+    /* #about #one{
+        order:1;
+    }
+    
+    #about #three{
+        order:2;
+    }
+
+    #about #two{
+        order:3;
+    } */
+    .top-container{
+        margin-top: 3rem;
+    }
+    .categories-area .col .cat-cap h5>a{
+        font-size:1rem;
+    }
+    .categories-area .col .cat-cap a{
+        color:white;
+        font-weight:600;
+    }
+    .categories-area .col:hover::before{
+        height:100%
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px)
@@ -176,12 +207,10 @@ a:hover{
     .categories-area .col .cat-cap h5>a{
         font-size:1.3rem;
     }
-
     .categories-area .col .cat-cap a{
         color:white;
         font-weight:600;
     }
-
     .categories-area .col:hover::before{
         height:100%
     }

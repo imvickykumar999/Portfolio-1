@@ -45,10 +45,6 @@ a:hover{
     background-color: darkslategray;
 }
 
-.categories-area{
-    margin: 5%;
-}
-
 .topInfo {
     animation:fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; 
@@ -60,12 +56,14 @@ a:hover{
 
 .topImg img {
     border:2px solid darkslategray;
-    border-radius: 6px;
+    border-radius: 10px;
     animation:fadeInDown; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.btn1 , .btn2{
+.btn1 , .btn2 {
     color: darkslategray;
     border: none;
     margin-left: 1rem;
@@ -78,6 +76,8 @@ a:hover{
 .categories-area{
     animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; 
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .col{
@@ -161,7 +161,12 @@ a:hover{
     border:2px solid transparent;
     box-shadow:0 0 10px 3px rgba(108,98,98,0.2);
     z-index:2;
-    }
+}
+
+@media only screen and (min-width: 767.98px) and (max-wdith:992px) 
+{ 
+   
+}
 
 @media only screen and (min-width: 576px) and (max-width: 767px)
 {

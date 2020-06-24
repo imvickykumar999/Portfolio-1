@@ -67,19 +67,31 @@ a:hover{
     margin-left: 1rem;
 }
 
+#about , #contact , #connect , #services{
+    scroll-margin-top: 100px; /*fixes anchor tag landing lower than where it should */
+}
+
 .categories-area{
     animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; 
 }
 
-.single-cat{
+.col{
     border:2px solid  darkslategray;
     border-radius:6px;
-    padding:0.8rem 0.8rem;
+    padding: 1rem 2rem;
     position:relative;
     z-index:1;
 }
-.categories-area .single-cat::before{
+
+.picture{
+    border:2px solid  darkslategray;
+    border-radius:6px;
+    position:relative;
+    z-index:1;
+}
+
+.categories-area .col::before{
     position:absolute;
     content:"";
     width:100%;
@@ -91,7 +103,7 @@ a:hover{
     z-index:-1;
     border-radius:6px;
 }
-.categories-area .single-cat .cat-icon span{
+.categories-area .col .cat-icon span{
     color:darkslategray;
     font-size:3rem;
     margin-top: 1rem;
@@ -104,14 +116,14 @@ a:hover{
     border-radius:50px;
     display:inline-block;
 }
-.categories-area .single-cat .cat-cap h5>a{
+.categories-area .col .cat-cap h5>a{
     color:white;
     font-size:1.5rem;
     font-weight:700;
     margin-bottom:1.5rem;
 }
 
-.categories-area .single-cat:hover::before{
+.categories-area .col:hover::before{
     height:100%
 }
 
@@ -146,25 +158,22 @@ a:hover{
     box-shadow:0 0 10px 3px rgba(108,98,98,0.2);
     z-index:2;
     }
-/* @media (max-width: 575px){#scrollUp,#back-top{right:16px}}#scrollUp a i,#back-top a i{display:block;line-height:50px}
-#scrollUp:hover{color:#fff}.sticky-bar{left:0;margin:auto;position:fixed;top:0;width:100%;-webkit-box-shadow:0 10px 15px rgba(25,25,25,0.1);box-shadow:0 10px 15px rgba(25,25,25,0.1);z-index:9999;
-    -webkit-animation:300ms ease-in-out 0s normal none 1 running fadeInDown;animation:300ms ease-in-out 0s normal none 1 running fadeInDown;-webkit-box-shadow:0 10px 15px rgba(25,25,25,0.1);background:#fff}.mt-5{margin-top:5px} */
 
 @media only screen and (min-width: 576px) and (max-width: 767px)
 {
     .topImg{
         margin-top: 2rem;
     }
-    .categories-area .single-cat .cat-cap h5>a{
+    .categories-area .col .cat-cap h5>a{
         font-size:1.3rem;
     }
 
-    .categories-area .single-cat .cat-cap a{
+    .categories-area .col .cat-cap a{
         color:white;
         font-weight:600;
     }
 
-    .categories-area .single-cat:hover::before{
+    .categories-area .col:hover::before{
         height:100%
     }
 }
@@ -195,14 +204,14 @@ a:hover{
         animation-duration: 2s; 
     }
 
-    .categories-area .single-cat .cat-cap h5>a{
+    .categories-area .col .cat-cap h5>a{
         font-size:1.1rem;
     }
-    .categories-area .single-cat .cat-cap a{
+    .categories-area .col .cat-cap a{
         color:white;
         font-weight:600;
     }
-    .categories-area .single-cat:hover::before{
+    .categories-area .col:hover::before{
         height:100%
     }
     .page-footer .navbar ul{
@@ -239,15 +248,15 @@ a:hover{
             animation-duration: 2s; 
         }
 
-        .categories-area .single-cat .cat-cap h5>a{
+        .categories-area .col .cat-cap h5>a{
             font-size:1rem;
         }
-        .categories-area .single-cat .cat-cap a{
+        .categories-area .col .cat-cap a{
             color:white;
             font-weight:600;
         }
 
-        .categories-area .single-cat:hover::before{
+        .categories-area .col:hover::before{
             height:100%
         }
         .page-footer .navbar ul{
@@ -256,6 +265,7 @@ a:hover{
         .page-footer .navbar ul li, .page-footer p{
             line-height: 1;
 }
+
 /* .preloader .preloader-circle{
     width:100px;
     height:100px;

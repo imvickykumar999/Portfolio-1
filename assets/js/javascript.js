@@ -1,11 +1,11 @@
 $(document).ready(function(){
     // Show hide popover
-    $("#navbarNav").click(function(){
+    $(".navbar-toggler").click(function(){
         $(this).find(".topnav").slideToggle("fast");
     });
 });
 $(document).on("click", function(event){
-    var $trigger = $("#navbarNav");
+    var $trigger = $(".navbar-toggler");
     if($trigger !== event.target && !$trigger.has(event.target).length){
         $(".topnav").slideUp("fast");
     }            

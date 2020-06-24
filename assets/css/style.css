@@ -55,12 +55,12 @@ a:hover{
 }
 
 .topImg img {
-    border:2px solid darkslategray;
-    border-radius: 10px;
     animation:fadeInDown; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; 
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    border:2px solid darkslategray;
+    border-radius: 10px;
 }
 
 .btn1 , .btn2 {

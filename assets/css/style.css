@@ -45,6 +45,10 @@ a:hover{
     background-color: darkslategray;
 }
 
+.categories-area{
+    margin: 5%;
+}
+
 .topInfo {
     animation:fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; 
@@ -231,39 +235,40 @@ a:hover{
         text-align: center;
         }
 
-        .topnav{
-            flex-direction: column;
-        }
+    .topnav{
+        flex-direction: column;
+    }
 
-        .topInfo {
-            animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-            animation-duration: 2s; 
-        }
-        
-        .topImg {
-            margin-top: 2rem;
-            border:2px solid darkslategray;
-            border-radius: 6px;
-            animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
-            animation-duration: 2s; 
-        }
+    .topInfo {
+        animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; 
+    }
+    
+    .topImg {
+        margin-top: 2rem;
+        border:2px solid darkslategray;
+        border-radius: 6px;
+        animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; 
+    }
 
-        .categories-area .col .cat-cap h5>a{
-            font-size:1rem;
-        }
-        .categories-area .col .cat-cap a{
-            color:white;
-            font-weight:600;
-        }
+    .categories-area .col .cat-cap h5>a{
+        font-size:1rem;
+    }
+    .categories-area .col .cat-cap a{
+        color:white;
+        font-weight:600;
+    }
 
-        .categories-area .col:hover::before{
-            height:100%
-        }
-        .page-footer .navbar ul{
-            flex-wrap: nowrap;
-        }
-        .page-footer .navbar ul li, .page-footer p{
-            line-height: 1;
+    .categories-area .col:hover::before{
+        height:100%
+    }
+    .page-footer .navbar ul{
+        flex-wrap: nowrap;
+    }
+    .page-footer .navbar ul li, .page-footer p{
+        line-height: 1;
+    }
 }
 
 /* .preloader .preloader-circle{

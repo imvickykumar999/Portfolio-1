@@ -250,6 +250,12 @@ a:hover{
     .categories-area .col:hover::before{
         height:100%
     }
+    #connect #one , #about #one{
+        margin-bottom: 1rem;
+    }
+    #about #three{
+        margin-top: 1rem;
+    }
 }
 
 @media only screen and (max-width: 575.98px) 
@@ -295,6 +301,12 @@ a:hover{
     .categories-area .col:hover::before{
         height:100%
     }
+    #connect #one , #about #one{
+        margin-bottom: 1rem;
+    }
+    #about #three{
+        margin-top: 1rem;
+    }
     .page-footer .navbar ul{
         flex-wrap: nowrap;
     }
@@ -335,9 +347,14 @@ a:hover{
         color:white;
         font-weight:600;
     }
-
     .categories-area .col:hover::before{
         height:100%
+    }
+    #connect #one , #about #one{
+        margin-bottom: 1rem;
+    }
+    #about #three{
+        margin-top: 1rem;
     }
     .page-footer .navbar ul{
         flex-wrap: nowrap;

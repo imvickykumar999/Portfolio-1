@@ -43,6 +43,7 @@ a:hover{
 
 .starting-content {
     background-color: darkslategray;
+    border-radius: 6px;
 }
 
 .heading{

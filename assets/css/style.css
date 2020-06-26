@@ -178,6 +178,11 @@ h2{
     z-index:2;
 }
 
+.colorbutton{
+    background-color: white;
+    color: black;
+}
+
 @media only screen and (min-width: 767.98px) and (max-width:992px) 
 { 
     .starting-content{

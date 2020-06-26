@@ -37,13 +37,10 @@ a:hover{
     color:white;
 }
 
-.top-container{
-    margin-top: 6rem;
-}
-
 .starting-content {
     background-color: darkslategray;
     border-radius: 6px;
+    margin-top: 6rem;
 }
 
 .heading{
@@ -51,7 +48,7 @@ a:hover{
 }
 
 .togivespacing{
-    margin-top:2.5rem;
+    margin-top:3rem;
 }
 
 .topInfo {
@@ -67,10 +64,7 @@ a:hover{
 .topImg img {
     animation:fadeInDown; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; 
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border:2px solid darkslategray;
-    border-radius: 10px;
+    padding: 0.5rem;
 }
 
 .btn1 , .btn2 {
@@ -86,23 +80,19 @@ a:hover{
 #about , #connect{
     animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; 
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 #services , #contact{
     animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; 
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 .col{
     border:2px solid  darkslategray;
     border-radius:6px;
-    padding: 1rem 2rem;
     position:relative;
     z-index:1;
+    margin: 0;
 }
 
 .picture img{
@@ -152,10 +142,6 @@ a:hover{
     margin-top: 3rem;
 }
 
-.section-title{
-    margin-bottom: 1.5rem;
-}
-
 .form-to-contact{
     background-color: darkslategray;
     border:2px solid  darkslategray;
@@ -186,11 +172,11 @@ a:hover{
 
 @media only screen and (min-width: 767.98px) and (max-width:992px) 
 { 
-    .top-container{
+    .starting-content{
         margin-top: 5rem;
     }
     h1{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .togivespacing{
         margin-top:1.8rem;
@@ -229,7 +215,7 @@ a:hover{
     .topImg{
         margin-top: 1rem;
     }
-    .top-container{
+    .starting-content{
         margin-top: 5rem;
     }
     h1{
@@ -270,7 +256,7 @@ a:hover{
     .topnav{
         flex-direction: column;
     }
-    .top-container{
+    .starting-content{
         margin-top: 4.4rem;
     }
     .topInfo {
@@ -291,6 +277,15 @@ a:hover{
     }
     h2{
         font-size: 1.8rem;
+    }
+    #about , #connect{
+       margin-left: 2.5%;
+       margin-right: 2.5%;
+    }
+    
+    #services , #contact{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
     .categories-area .col .cat-cap h5>a{
         font-size:1.3rem;

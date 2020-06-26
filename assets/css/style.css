@@ -38,20 +38,25 @@ a:hover{
 }
 
 .top-container{
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 .starting-content {
     background-color: darkslategray;
 }
 
+.heading{
+    font-family: 'Josefin Sans';
+}
+
 .togivespacing{
-    margin-top:3.5rem;
+    margin-top:2.5rem;
 }
 
 .topInfo {
     animation:fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; 
+    padding: 1.5rem;
 }
 
 .topInfo span{
@@ -77,9 +82,16 @@ a:hover{
     scroll-margin-top: 100px; /*fixes anchor tag landing lower than where it should */
 }
 
-.categories-area{
+#about , #connect{
     animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; 
+    animation-duration: 3s; 
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#services , #contact{
+    animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; 
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -92,7 +104,7 @@ a:hover{
     z-index:1;
 }
 
-.picture{
+.picture img{
     border:2px solid  darkslategray;
     border-radius:6px;
     position:relative;
@@ -171,24 +183,22 @@ a:hover{
     z-index:2;
 }
 
-@media only screen and (min-width: 767.98px) and (max-wdith:992px) 
+@media only screen and (min-width: 767.98px) and (max-width:992px) 
 { 
-    /* #about #one{
-        order:1;
-    }
-    
-    #about #three{
-        order:2;
-    }
-
-    #about #two{
-        order:3;
-    } */
     .top-container{
-        margin-top: 3rem;
+        margin-top: 5rem;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    .togivespacing{
+        margin-top:1.8rem;
+    }
+    h2{
+        font-size: 1.8rem;
     }
     .categories-area .col .cat-cap h5>a{
-        font-size:1rem;
+        font-size:1.5rem;
     }
     .categories-area .col .cat-cap a{
         color:white;
@@ -197,15 +207,41 @@ a:hover{
     .categories-area .col:hover::before{
         height:100%
     }
+    #about #one{
+        order: 1;
+        margin-bottom: 1rem;
+    }
+    #about #two{
+        order: 3;
+    }
+    #about #two img{
+        width: 25rem;
+    }
+    #about #three{
+        order: 2;
+        margin-bottom: 1rem;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px)
 {
     .topImg{
-        margin-top: 2rem;
+        margin-top: 1rem;
+    }
+    .top-container{
+        margin-top: 5rem;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    .togivespacing{
+        margin-top:1.8rem;
+    }
+    h2{
+        font-size: 1.8rem;
     }
     .categories-area .col .cat-cap h5>a{
-        font-size:1.3rem;
+        font-size:1.5rem;
     }
     .categories-area .col .cat-cap a{
         color:white;
@@ -224,26 +260,33 @@ a:hover{
     padding: 10px 0;
     text-align: center;
     }
-
     .topnav{
         flex-direction: column;
     }
-
+    .top-container{
+        margin-top: 4.4rem;
+    }
     .topInfo {
         animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
         animation-duration: 2s; 
     }
-    
     .topImg {
-        margin-top: 2rem;
         border:2px solid darkslategray;
         border-radius: 6px;
         animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
         animation-duration: 2s; 
     }
-
+    h1{
+        font-size: 2rem;
+    }
+    .togivespacing{
+        margin-top:1.2rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
     .categories-area .col .cat-cap h5>a{
-        font-size:1.1rem;
+        font-size:1.3rem;
     }
     .categories-area .col .cat-cap a{
         color:white;
@@ -279,7 +322,6 @@ a:hover{
     }
     
     .topImg {
-        margin-top: 2rem;
         border:2px solid darkslategray;
         border-radius: 6px;
         animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
@@ -287,7 +329,7 @@ a:hover{
     }
 
     .categories-area .col .cat-cap h5>a{
-        font-size:1rem;
+        font-size:1.3rem;
     }
     .categories-area .col .cat-cap a{
         color:white;

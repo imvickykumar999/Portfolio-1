@@ -364,7 +364,13 @@ h2{
     }
 }
 
-/* .preloader .preloader-circle{
+.preloader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.preloader .preloader-circle{
     width:100px;
     height:100px;
     position:relative;
@@ -409,12 +415,6 @@ h2{
     max-width:55px;
 }
 
-.preloader .pere-text strong{
-    font-weight:800;
-    color:darkslategray;
-    text-transform:uppercase
-}
-
 @-webkit-keyframes zoom{
     0%{
     -webkit-transform:rotate(0deg);
@@ -447,4 +447,4 @@ h2{
         -webkit-transition:.6s;
         -o-transition:.6s;transition:.6s
     }
-} */
+}

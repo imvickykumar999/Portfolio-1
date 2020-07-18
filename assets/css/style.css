@@ -364,10 +364,10 @@ h2{
     }
 }
 
-.preloader{
+/* .preloader{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left:50%;
 }
 
 .preloader .preloader-circle{
@@ -447,4 +447,4 @@ h2{
         -webkit-transition:.6s;
         -o-transition:.6s;transition:.6s
     }
-}
+} */

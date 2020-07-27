@@ -1,174 +1,69 @@
 body,html{
     height:vh;
     width:vw;
-    background-color: #287984;
     margin:0;
     padding:0;
-    color:white;
+    color:black;
     scroll-behavior: smooth;
-    font-family: 'Poppins';
-}
-
-.navbar{
-    background-color: darkslategray;
-}
-
-.topnav li{
-    margin: auto;
-}
-
-.topnav li a{
-    color: whitesmoke;
-}
-
-.topnav li a:hover{
-    color:white;
-    border-top-color: white;
-    border-top-style: solid;
-    border-top-width: medium;
-}
-
-a{
-    color:rgb(185, 179, 179);
-}
-
-a:hover{
-    text-decoration: none;
-    color:white;
-}
-
-.starting-content {
-    background-color: darkslategray;
-    border-radius: 6px;
-    margin-top: 6rem;
-}
-
-.heading{
     font-family: 'Josefin Sans';
 }
 
-/* .forborder{
-    border-left: 4px white solid;
-} */
+.bg-img{
+    background-image: url('../img/splash.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    opacity: 85%;
+    color: white;
+}
+
+a , a:hover{
+    color: white;
+}
 
 .togivespacing{
     margin-top:3rem;
+    margin-bottom:60px;
 }
 
-.topInfo {
-    animation:fadeInUp; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; 
-    padding: 1.5rem;
+.my-pic{
+    max-height: 450px;
+    border-radius: 50%;
 }
 
-.topInfo span{
-    font-weight: 800;
+.arrow{
+    height: 80px;
+    transform: rotate(90deg);
 }
 
-.topImg img {
-    animation:fadeInDown; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; 
-    padding: 0.5rem;
+.develop , .design {
+    height: 250px;
+    width: auto;
 }
 
-.btn1 , .btn2 {
-    color: darkslategray;
-    border: none;
-    margin-left: 1rem;
+.linked-in , .github{
+    height:150px;
+    width:auto;
 }
 
-#about , #contact , #connect , #services{
-    scroll-margin-top: 100px; /*fixes anchor tag landing lower than where it should */
+.under-line{
+    height: 2px;
+    width: 580px;
+    background-color: black;
 }
 
-#about , #connect{
-    animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s; 
-}
-
-#services , #contact{
-    animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s; 
-}
-
-.col{
-    border:2px solid  darkslategray;
-    border-radius:6px;
-    position:relative;
-    z-index:1;
-    margin: 0;
-}
-
-.picture img{
-    border:2px solid  darkslategray;
-    border-radius:6px;
-    position:relative;
-    z-index:1;
-}
-
-h2{
-    font-weight: 700;
-}
-
-.categories-area .col::before{
-    position:absolute;
-    content:"";
-    width:100%;
-    height:0;
-    background:darkslategray;
-    transition:.6s;
-    bottom:0;
-    left:0;
-    z-index:-1;
-    border-radius:6px;
-}
-.categories-area .col .cat-icon span{
-    color:darkslategray;
-    font-size:3rem;
-    margin-top: 1rem;
-    margin-bottom:1.5rem;
-    width:100px;
-    height:100px;
-    background:white;
-    line-height:100px;
-    text-align:center;
-    border-radius:50px;
-    display:inline-block;
-}
-.categories-area .col .cat-cap h5>a{
-    color:white;
-    font-size:1.5rem;
-    font-weight:700;
-    margin-bottom:1.5rem;
-}
-
-.categories-area .col:hover::before{
-    height:100%
-}
-
-.togivemargin{
-    margin-top: 3rem;
-}
-
-.form-to-contact{
-    background-color: darkslategray;
-    border:2px solid  darkslategray;
-    border-radius:6px;
-}
-
-.categories-area .form-to-contact{
-    animation:fadeInDown; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; 
+.page-footer{
+    background-color: rgb(12, 9, 24);
 }
 
 #back-top{
-    background: darkslategray;
+    background: black;
     height:50px;
     width:50px;
     right:31px;
     bottom:18px;
     position:fixed;
-    color:#fff;
+    color:white;
     font-size:20px;
     text-align:center;
     border-radius:50%;
@@ -178,134 +73,33 @@ h2{
     z-index:2;
 }
 
-.colorbutton{
-    background-color: white;
-    color: black;
-}
-
 @media only screen and (min-width: 767.98px) and (max-width:992px) 
 { 
-    .starting-content{
-        margin-top: 5rem;
-    }
     h1{
         font-size: 2rem;
     }
     h2{
         font-size: 1.8rem;
     }
-    .categories-area .col .cat-cap h5>a{
-        font-size:1.5rem;
-    }
-    .categories-area .col .cat-cap a{
-        color:white;
-        font-weight:600;
-    }
-    .categories-area .col:hover::before{
-        height:100%
-    }
-    #about #one{
-        order: 1;
-        margin-bottom: 1rem;
-    }
-    #about #two{
-        order: 3;
-    }
-    #about #two img{
-        width: 25rem;
-    }
-    #about #three{
-        order: 2;
-        margin-bottom: 1rem;
-    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px)
 {
-    .topImg{
-        margin-top: 1rem;
-    }
-    .starting-content{
-        margin-top: 5rem;
-    }
     h1{
         font-size: 2.3rem;
     }
     h2{
         font-size: 1.8rem;
     }
-    .categories-area .col .cat-cap h5>a{
-        font-size:1.5rem;
-    }
-    .categories-area .col .cat-cap a{
-        color:white;
-        font-weight:600;
-    }
-    .categories-area .col:hover::before{
-        height:100%
-    }
-    #connect #one , #about #one , #services #one{
-        margin-bottom: 1rem;
-    }
-    #about #three{
-        margin-top: 1rem;
-    }
 }
 
 @media only screen and (max-width: 575.98px) 
 { 
-    .navbar .nav-item{
-    display: block;
-    width:50%;
-    padding: 10px 0;
-    text-align: center;
-    }
-    .topnav{
-        flex-direction: column;
-    }
-    .starting-content{
-        margin-top: 4.4rem;
-    }
-    .topInfo {
-        animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 2s; 
-    }
-    .topImg {
-        border:2px solid darkslategray;
-        border-radius: 6px;
-        animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 2s; 
-    }
     h1{
         font-size: 2rem;
     }
     h2{
         font-size: 1.8rem;
-    }
-    #about , #connect{
-       margin-left: 2.5%;
-       margin-right: 2.5%;
-    }
-    
-    #services , #contact{
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
-    .categories-area .col .cat-cap h5>a{
-        font-size:1.3rem;
-    }
-    .categories-area .col .cat-cap a{
-        color:white;
-        font-weight:600;
-    }
-    .categories-area .col:hover::before{
-        height:100%
-    }
-    #connect #one , #about #one , #services #one{
-        margin-bottom: 1rem;
-    }
-    #about #three{
-        margin-top: 1rem;
     }
     .page-footer .navbar ul{
         flex-wrap: nowrap;
@@ -317,45 +111,6 @@ h2{
 
 @media only screen and (max-width:375px) 
 { 
-    .navbar .nav-item{
-        display: block;
-        width:50%;
-        padding: 10px 0;
-        text-align: center;
-        }
-
-    .topnav{
-        flex-direction: column;
-    }
-
-    .topInfo {
-        animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 2s; 
-    }
-    
-    .topImg {
-        border:2px solid darkslategray;
-        border-radius: 6px;
-        animation:fadeInRight; /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 2s; 
-    }
-
-    .categories-area .col .cat-cap h5>a{
-        font-size:1.3rem;
-    }
-    .categories-area .col .cat-cap a{
-        color:white;
-        font-weight:600;
-    }
-    .categories-area .col:hover::before{
-        height:100%
-    }
-    #connect #one , #about #one , #services #one{
-        margin-bottom: 1rem;
-    }
-    #about #three{
-        margin-top: 1rem;
-    }
     .page-footer .navbar ul{
         flex-wrap: nowrap;
     }
@@ -364,87 +119,3 @@ h2{
     }
 }
 
-/* .preloader{
-    position: absolute;
-    top: 50%;
-    left:50%;
-}
-
-.preloader .preloader-circle{
-    width:100px;
-    height:100px;
-    position:relative;
-    border-style:solid;
-    border-width:1px;
-    border-top-color:darkslategray;
-    border-bottom-color:transparent;
-    border-left-color:transparent;
-    border-right-color:transparent;
-    z-index:10;
-    border-radius:50%;
-    -webkit-box-shadow:0 1px 5px 0 rgba(35,181,185,0.15);
-    box-shadow:0 1px 5px 0 rgba(35,181,185,0.15);
-    background-color:#fff;
-    -webkit-animation:zoom 2000ms infinite ease;
-    animation:zoom 2000ms infinite ease;
-    -webkit-transition:.6s;-o-transition:.6s;transition:.6s
-}
-
-.preloader .preloader-circle2{
-    border-top-color:darkslategray;
-}
-
-.preloader .preloader-img{
-    position:absolute;
-    top:50%;
-    z-index:200;
-    left:0;
-    right:0;
-    margin:0 auto;
-    text-align:center;
-    display:inline-block;
-    -webkit-transform:translateY(-50%);
-    -ms-transform:translateY(-50%);
-    transform:translateY(-50%);
-    padding-top:6px;
-    -webkit-transition:.6s;
-    -o-transition:.6s;transition:.6s
-}
-
-.preloader .preloader-img img{
-    max-width:55px;
-}
-
-@-webkit-keyframes zoom{
-    0%{
-    -webkit-transform:rotate(0deg);
-    transform:rotate(0deg);
-    -webkit-transition:.6s;
-    -o-transition:.6s;transition:.6s
-}
-
-    100%{
-        -webkit-transform:rotate(360deg);
-        transform:rotate(360deg);
-        -webkit-transition:.6s;
-        -o-transition:.6s;
-        transition:.6s
-    }
-}
-
-@keyframes zoom{
-    0%{
-        -webkit-transform:rotate(0deg);
-        transform:rotate(0deg);
-        -webkit-transition:.6s;
-        -o-transition:.6s;
-        transition:.6s
-    }
-    
-    100%{
-        -webkit-transform:rotate(360deg);
-        transform:rotate(360deg);
-        -webkit-transition:.6s;
-        -o-transition:.6s;transition:.6s
-    }
-} */

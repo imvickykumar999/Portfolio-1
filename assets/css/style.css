@@ -5,7 +5,7 @@ body,html{
     padding:0;
     color:black;
     scroll-behavior: smooth;
-    font-family: 'Josefin Sans';
+    font-family: 'Roboto';
 }
 
 .bg-img{
@@ -13,26 +13,53 @@ body,html{
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
-    opacity: 85%;
+    opacity: 90%;
+    color: white;
+    position: relative;
+}
+
+.to-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+.main-heading{
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.highlight{
+    font-weight: 600;
+    color: #e6e6e6;
+}
+
+a {
     color: white;
 }
 
-a , a:hover{
-    color: white;
+a:hover{
+    color: #e6e6e6;
 }
 
 .togivespacing{
-    margin-top:3rem;
-    margin-bottom:60px;
+    margin-top:5rem;
+    margin-bottom:3rem;
 }
 
 .my-pic{
     max-height: 450px;
     border-radius: 50%;
+    box-shadow:0 0 10px 3px rgba(108,98,98,0.2);
 }
 
 .arrow{
-    height: 80px;
+    height: 3.5rem;
     transform: rotate(90deg);
 }
 
@@ -42,14 +69,19 @@ a , a:hover{
 }
 
 .linked-in , .github{
-    height:150px;
+    height:120px;
     width:auto;
 }
 
-.under-line{
-    height: 2px;
-    width: 580px;
-    background-color: black;
+.section-title{
+    width: max-content;
+    border-bottom: solid black 2px;
+}
+
+.links , .links:hover{
+    background-color: #e6e6e6;
+    color: black;
+    text-decoration: none;
 }
 
 .page-footer{
@@ -81,25 +113,63 @@ a , a:hover{
     h2{
         font-size: 1.8rem;
     }
+    .develop , .design {
+        height: 160px;
+        width: auto;
+    }
+    .linked-in , .github{
+        height:100px;
+        width:auto;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px)
 {
+    .main-heading{
+        padding:1rem;
+        text-align:center;
+    }
     h1{
         font-size: 2.3rem;
     }
     h2{
         font-size: 1.8rem;
     }
+    .develop , .design {
+        height: 160px;
+        width: auto;
+    }
+    .for-reversing{
+        flex-direction: column-reverse;
+    }
+    .linked-in , .github{
+        height:100px;
+        width:auto;
+    }
 }
 
 @media only screen and (max-width: 575.98px) 
 { 
+    .main-heading{
+        padding:1rem;
+        text-align:center;
+    }
     h1{
         font-size: 2rem;
     }
     h2{
         font-size: 1.8rem;
+    }
+    .develop , .design {
+        height: 160px;
+        width: auto;
+    }
+    .for-reversing{
+        flex-direction: column-reverse;
+    }
+    .linked-in , .github{
+        height:80px;
+        width:auto;
     }
     .page-footer .navbar ul{
         flex-wrap: nowrap;
@@ -111,6 +181,21 @@ a , a:hover{
 
 @media only screen and (max-width:375px) 
 { 
+    .main-heading{
+        padding:1rem;
+        text-align:center;
+    }
+    .develop , .design {
+        height: 140px;
+        width: auto;
+    }
+    .for-reversing{
+        flex-direction: column-reverse;
+    }
+    .linked-in , .github{
+        height:60px;
+        width:auto;
+    }
     .page-footer .navbar ul{
         flex-wrap: nowrap;
     }

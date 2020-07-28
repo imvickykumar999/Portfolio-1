@@ -46,6 +46,8 @@ a {
 
 a:hover{
     color: #e6e6e6;
+    animation: headShake;
+    animation-duration: 3s;
 }
 
 .togivespacing{

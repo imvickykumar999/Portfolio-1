@@ -79,13 +79,14 @@ a:hover{
 }
 
 .links , .links:hover{
-    background-color: #e6e6e6;
-    color: black;
+    background-color: black;
+    border: solid black 3px;
+    color: white;
     text-decoration: none;
 }
 
 .page-footer{
-    background-color: rgb(12, 9, 24);
+    background-color: black;
 }
 
 #back-top{
@@ -93,7 +94,7 @@ a:hover{
     height:50px;
     width:50px;
     right:31px;
-    bottom:18px;
+    bottom:40px;
     position:fixed;
     color:white;
     font-size:20px;
@@ -107,11 +108,12 @@ a:hover{
 
 @media only screen and (min-width: 767.98px) and (max-width:992px) 
 { 
-    h1{
-        font-size: 2rem;
+    .main-heading{
+        padding:0 1rem;
+        text-align:center;
     }
-    h2{
-        font-size: 1.8rem;
+    h1{
+        font-size: 2.4rem;
     }
     .develop , .design {
         height: 160px;
@@ -126,14 +128,14 @@ a:hover{
 @media only screen and (min-width: 576px) and (max-width: 767px)
 {
     .main-heading{
-        padding:1rem;
+        padding:0 1rem;
         text-align:center;
     }
     h1{
-        font-size: 2.3rem;
+        font-size: 2.4rem;
     }
     h2{
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     .develop , .design {
         height: 160px;
@@ -151,14 +153,17 @@ a:hover{
 @media only screen and (max-width: 575.98px) 
 { 
     .main-heading{
-        padding:1rem;
+        padding:0 1rem;
         text-align:center;
     }
     h1{
         font-size: 2rem;
     }
-    h2 , h3{
-        font-size: inherit;
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 1.3rem;
     }
     .togivespacing{
         margin-top:4rem;
@@ -186,7 +191,7 @@ a:hover{
 @media only screen and (max-width:375px) 
 { 
     .main-heading{
-        padding:1rem;
+        padding:0 1rem;
         text-align:center;
     }
     .develop , .design {
@@ -205,7 +210,7 @@ a:hover{
         width:auto;
     }
     h1{
-        font-size: 2rem;
+        font-size: 1.5rem
     }
     h2 , h3{
         font-size: inherit;

@@ -210,10 +210,13 @@ a:hover{
         width:auto;
     }
     h1{
-        font-size: 1.5rem
+        font-size: 1.4rem;
     }
-    h2 , h3{
-        font-size: inherit;
+    h2{
+        font-size: 1.2rem ;
+    }
+    h3{
+        font-size: 0.9rem;
     }
     .page-footer .navbar ul{
         flex-wrap: nowrap;

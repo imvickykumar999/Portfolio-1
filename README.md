@@ -1,5 +1,5 @@
 # Portfolio
 This is my portfolio. 
-I have built this using HTML , CSS , Bootstrap and JS. 
+I have built this using HTML , CSS and Bootstrap. 
 Font used is 'Roboto'.
-Colors used are white, #e6e6e6 and #0c0918.
+Colors used are white and black only .

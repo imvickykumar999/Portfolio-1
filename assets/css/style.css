@@ -1,6 +1,6 @@
 body,html{
-    height:vh;
-    width:vw;
+    height:100vh;
+    width:100vw;
     margin:0;
     padding:0;
     color:black;
@@ -73,7 +73,7 @@ a:hover{
     width:auto;
 }
 
-.section-title{
+.title{
     width: max-content;
     border-bottom: solid black 2px;
 }
@@ -133,7 +133,7 @@ a:hover{
         font-size: 2.3rem;
     }
     h2{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .develop , .design {
         height: 160px;
@@ -157,8 +157,12 @@ a:hover{
     h1{
         font-size: 2rem;
     }
-    h2{
-        font-size: 1.8rem;
+    h2 , h3{
+        font-size: inherit;
+    }
+    .togivespacing{
+        margin-top:4rem;
+        margin-bottom:2rem;
     }
     .develop , .design {
         height: 160px;
@@ -189,12 +193,22 @@ a:hover{
         height: 140px;
         width: auto;
     }
+    .togivespacing{
+        margin-top:4rem;
+        margin-bottom:2rem;
+    }
     .for-reversing{
         flex-direction: column-reverse;
     }
     .linked-in , .github{
         height:60px;
         width:auto;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2 , h3{
+        font-size: inherit;
     }
     .page-footer .navbar ul{
         flex-wrap: nowrap;

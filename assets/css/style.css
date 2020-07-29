@@ -50,11 +50,6 @@ a:hover{
     animation-duration: 3s;
 }
 
-.togivespacing{
-    margin-top:5rem;
-    margin-bottom:3rem;
-}
-
 .my-pic{
     max-height: 450px;
     border-radius: 50%;
@@ -77,6 +72,8 @@ a:hover{
 }
 
 .title{
+    margin-top:5rem;
+    margin-bottom:3rem;
     width: max-content;
     border-bottom: solid black 2px;
 }
@@ -156,7 +153,7 @@ a:hover{
 @media only screen and (max-width: 575.98px) 
 { 
     .bg-img{
-        height: 98vh;
+        height: 97vh;
     }
     .main-heading{
         padding:0 1rem;
@@ -166,14 +163,14 @@ a:hover{
         font-size: 2rem;
     }
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     h3{
         font-size: 1.3rem;
     }
-    .togivespacing{
-        margin-top:4rem;
-        margin-bottom:2rem;
+    .title{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
     }
     .develop , .design {
         height: 160px;
@@ -197,7 +194,7 @@ a:hover{
 @media only screen and (max-width:375px) 
 { 
     .bg-img{
-        height: 98vh;
+        height: 97vh;
     }
     .main-heading{
         padding:0 1rem;
@@ -219,13 +216,13 @@ a:hover{
         width:auto;
     }
     h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
     }
     h3{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .page-footer .navbar ul{
         flex-wrap: nowrap;
